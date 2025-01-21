@@ -1,0 +1,313 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+                                   /* section name */
+.name-container{
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(assat/image/buttom.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.nav-item a{
+    color: black;
+}
+.nav-item a:hover{
+    color: white;
+    background-color: orange;
+    border-radius: 10px;
+}
+.nav-container{
+    height: 50px;
+    width: 800px;
+    z-index: 100;
+    position: fixed;
+    top: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    animation-name: nav;
+    animation-duration: 5s;
+}
+@keyframes nav{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY();
+    }
+    
+}
+.full-container{
+    height: 80vh;
+    width: 80%;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.full-container h1{
+    font-size: 90px;
+    margin-left: 100px;
+}
+.full-container  h3{
+    margin-left: 100px;
+}
+.h{
+    animation-name: h;
+    animation-duration: 5s;
+}
+@keyframes h{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY();
+    }
+}
+
+                       /* section apout */
+
+
+.me{
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 237, 237);
+    position: relative;
+}
+.proicon{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    animation-name: proicon;
+    animation-duration: 5s;
+     animation-timeline: view(); 
+    animation-range: 20px;
+}
+@keyframes proicon{
+    from{
+        opacity: 0;
+        scale: 0px;
+    }
+    to{
+        opacity: 1;
+        scale: 20px;
+    }
+}
+.about-container{
+    height: 80vh;
+    width: 80% ;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assat/image/top.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.photo{
+    height: 70vh;
+    width: 40%;
+    border-right: 2px solid rgb(255, 184, 91);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: photo;
+    animation-duration: 5s;
+    animation-range: 20px;
+      /* animation-timeline: view();   */
+}
+@keyframes photo {
+    from{
+        opacity: o;
+        transform: translateY(100px);
+        border-right: none;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+        border-right: none;
+    }
+    
+}
+.photo img{
+         border-radius: 360px;
+         height: 50%;
+         width: 50%;
+         margin-bottom: 10px;
+}
+.detailes{
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+    animation-name: detailes;
+    animation-duration: 1s;
+    animation-range: 10px;
+    /* animation-timeline: view();  */
+}
+@keyframes detailes{
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY();
+    }
+}
+/* ---------------------------------------------------- */
+
+/*                      Skill                            */
+
+
+.skil-section{
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+
+}
+.skill-container{
+    height: 80vh;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+    background-image:url(assat/image/right.jpg) ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill-container h1{
+    font-size: 100px;
+}
+.language{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.mig-lan img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.mig-lan{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 50px;
+    border: 2px solid orange;
+    animation-name: mig;
+    animation-duration: 3s;
+}
+@keyframes mig{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.mig-lan:hover{
+    background-color: orange;
+    border: 5px solid white;
+    transform: scale(10px);
+    transition: 0.5s;
+}
+
+/* --------------------------------------------------------- */
+
+/*                    project                                */
+
+
+.project-section{
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro-containr{
+    height: 80vh;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(assat/image/left.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    flex-direction: column;
+}
+.pro-containr img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:10px;
+    right: -110px;
+}
+.pro-containr h1{
+    font-size: 100px;
+    animation-name: soon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes soon{
+    0%{
+        border: 10px solid white;
+    }
+    10%{
+        border: 10px solid orange;
+    }
+    30%{
+        border: 10px solid blue;
+    }
+    50%{
+        border: 10px solid greenyellow;
+    }
+    70%{
+        border: 10px solid orange;
+    }
+    100%{
+        border: 10px solid rgb(190, 188, 188);
+    }
+}
